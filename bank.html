@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Money</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl my-8 text-center">
+            Let's Get
+            <span class="font-semibold text-blue-500">Mooooooney</span>
+        </h1>
+        <main>
+            <!-- start category show -->
+            <section class="w-9/12 mx-auto grid grid-cols-3 gap-4">
+                <div id="deposit" class="bg-green-500 px-8 py-10 rounded-md">
+                    <h4 class="text-2xl text-white">Deposit</h4>
+                    <h1 class="text-4xl text-white">
+                        $<span id="deposit-number">00</span>
+                    </h1>
+                </div>
+                <div id="withdraw" class="bg-amber-500 px-8 py-10 rounded-md">
+                    <h4 class="text-2xl text-white">Withdraw</h4>
+                    <h1 class="text-4xl text-white">
+                        $<span id="withdraw-current">00</span>
+                    </h1>
+                </div>
+                <div id="balance" class="bg-cyan-500 px-8 py-10 rounded-md">
+                    <h4 class="text-2xl text-white">Balance</h4>
+                    <h1 class="text-4xl text-white">
+                        $<span id="balance-current">10</span>
+                    </h1>
+                </div>
+            </section>
+            <!-- end category show -->
+
+            <!-- start Counting Section -->
+            <section class="w-9/12 mx-auto grid grid-cols-2 gap-4 mt-10">
+                <div id="add-deposit" class="bg-indigo-500 px-8 py-10 rounded-md">
+                    <h4 class="text-2xl text-white">Please Deposit</h4>
+                    <input class="block w-9/12 my-5 p-2 rounded-md" type="number" name="" placeholder="$ Amount You Want To Deposit" id="add-deposit-field" />
+                    <button id="add-deposit-btn" class="bg-green-500 p-2 px-4 text-white rounded-md hover:bg-blue-500">
+              Deposit
+            </button>
+                </div>
+                <div id="withdraw-calc " class="bg-pink-500 px-8 py-10 rounded-md">
+                    <h4 class="text-2xl text-white">Please Withdraw</h4>
+                    <input class="block w-9/12 my-5 p-2 rounded-md" type="number" name=" " placeholder="$ Amount You Want To Withdraw " id="withdraw-calc-field" />
+                    <button id="withdraw-calc-btn" class="bg-amber-500 p-2 px-4 text-white rounded-md hover:bg-blue-500">
+              Withdraw
+            </button>
+                </div>
+            </section>
+            <!-- End Counting Section -->
+        </main>
+    </header>
+    <!-- <script src="login.js"></script> -->
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
