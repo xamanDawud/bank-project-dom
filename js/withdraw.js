@@ -9,6 +9,10 @@ document
         let withdrawCurrent = parseFloat(withdrawCureentString);
         let inputFieldString = document.getElementById("withdraw-calc-field").value;
         let inputField = parseFloat(inputFieldString);
+        if (isNaN(inputField)) {
+            alert("please Provide a valid number");
+            return;
+        }
         let inputFieldPlus = withdrawCurrent + inputField;
         let inputToSubBalance = mainBalance - inputField;
         console.log(inputToSubBalance);
@@ -16,7 +20,7 @@ document
             document.getElementById("balance-current").innerText = inputToSubBalance;
             document.getElementById("withdraw-current").innerText = inputFieldPlus;
         } else {
-            alert("You have not enough money");
+            alert("Bou er bank e eto taka nai");
         }
 
         document.getElementById("withdraw-calc-field").value = "";
